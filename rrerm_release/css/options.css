@@ -1,0 +1,65 @@
+body {
+  background-color: #f4f7fa;
+  font-family: 'Roboto', sans-serif;
+}
+body .flat-butt {
+  display: inline-block;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: 0;
+  background-color: #00ACE2;
+  color: #ffffff;
+  cursor: pointer;
+  outline: 0;
+  text-align: center;
+  -webkit-appearance: inherit !important;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+body .flat-butt:hover {
+  background: #2e7bc4;
+  color: white;
+}
+body #main {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: inset 0px 0px 2px 1px #bfbfbf;
+  border-radius: 4px;
+}
+body #main label {
+  color: #5c6878;
+}
+body #contact {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: inset 0px 0px 2px 1px #bfbfbf;
+  border-radius: 4px;
+  color: #5c6878;
+}
+body #contact button {
+  width: auto;
+  height: 30px;
+  background: #1b95e0;
+  box-shadow: none;
+  border-radius: 4px;
+  border: none;
+}
+body #contact button:hover {
+  background: #0c7abf;
+}
+body #contact button img {
+  width: 12px;
+  height: 12px;
+  margin-top: -2px;
+}
+body #contact button a {
+  color: white !important;
+  text-decoration: none;
+}
+body.form-control {
+  width: 200px !important;
+}

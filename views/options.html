@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Revolut Real Exchange Rates Monitor - Settings</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/vendors/bootstrap-select/dist/css/bootstrap-select.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/options.css" type="text/css"/>
+</head>
+<body>
+    <div id="contact" class="container well">
+        <button type="button" class="twitter"><a href="https://twitter.com/MehdiChch" class="twitter-follow-button" data-show-count="false"><img src="/img/twitter32.png"> Follow @MehdiChch</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></button> on Twitter for help and suggestions! Or add a new issue on <a href="https://github.com/mehdichaouch/revolut-real-exchange-rates-monitor/issues/new" target="_blank">GitHub</a>.
+    </div>
+    <div id="main" class="container well">
+        <form class="form-horizontal">
+            <div class="form-inline mb-2">
+                <div class="form-group">
+                    <label for="currencyFrom" class="hidden-xs hidden-sm" id="strCurrencyFrom">From</label>
+                    <select id="currencyFrom" name="currencyFrom" class="form-control form-select mx-sm-2 selectpicker" data-live-search="true" data-width="fit"></select>
+                </div>
+
+                <div class="mx-sm-2">
+                    <button id="switchCurrency" name="switchCurrency" aria-label="Inverse" class="flat-butt m-0 p-8" type="button"><svg width="20px" height="20px" viewBox="0 0 50 47" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-label="Inverse button" role="img"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-297.000000, -595.000000)" fill="#FFFFFF"><g transform="translate(50.000000, 394.000000)"><g transform="translate(247.000000, 201.000000)"><g transform="translate(7.142857, 25.000000)"><polygon points="42.7539856 10.9773747 19.455409 0 19.455409 7.87415338 0 7.87415338 0 14.080596 19.455409 14.080596 19.455409 21.9547493"></polygon></g><g transform="translate(21.428571, 11.309524) rotate(-180.000000) translate(-21.428571, -11.309524) "><polygon points="42.7539856 10.9773747 19.455409 0 19.455409 7.87415338 0 7.87415338 0 14.080596 19.455409 14.080596 19.455409 21.9547493"></polygon></g></g></g></g></g></svg></button>
+                </div>
+
+                <div class="form-group">
+                    <label for="currencyTo" class="hidden-xs hidden-sm" id="strCurrencyTo">To</label>
+                    <select id="currencyTo" name="currencyTo" class="form-control form-select mx-sm-2 selectpicker" data-live-search="true" data-width="fit"></select>
+                </div>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input id="notifOptns" name="notifOptns" type="checkbox" class="form-check-input">
+                    <span id="strNotifOptns">Display notifications feature</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input id="portfolioOptns" name="portfolioOptns" type="checkbox" class="form-check-input">
+                    <span id="strPortfolio">Display portfolio feature</span>
+                </label>
+            </div>
+
+            <div class="form-inline mb-2">
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="refreshDelay" id="strRefreshDelay">Refresh delay</label>
+                        <input id="refreshDelay" class="form-control ml-sm-2" name="refreshDelay" type="number" min="1">
+                        <div class="input-group-append">
+                            <span id="strSeconds" class="input-group-text">seconde(s)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input id="colorChange" name="colorChange" type="checkbox" class="form-check-input">
+                    <span id="strColorChange">Icon color change</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input id="badgePortfolioConversionOptns" name="badgePortfolioConversionOptns" type="checkbox" class="form-check-input">
+                    <span id="strBadgePortfolioConversion">Portfolio conversion in badge text</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input id="roundBadge" name="roundBadge" type="checkbox" class="form-check-input">
+                    <span id="strRoundBadge">Round badge text</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input id="badgeTextAnimate" name="badgeTextAnimate" type="checkbox" class="form-check-input">
+                    <span id="strBadgeTextAnimate">Animate badge text</span>
+                </label>
+            </div>
+
+            <div class="form-inline">
+                <div id="soundOptn" class="form-group">
+                    <label for="soundSample" id="strSound">Sound</label>
+                    <select id="soundSample" name="soundSample" class="form-control form-select mx-sm-2 selectpicker" data-width="fit">
+                        <option value="mute">Mute</option>
+                        <option value="pop">Pop</option>
+                        <option value="clicClac">Click-Clack</option>
+                        <option value="clacClic">Clack-Click</option>
+                        <option value="clickOff">Click-Off</option>
+                        <option value="pling">Pling</option>
+                        <option value="ting">Ting</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="save" class="flat-butt">Save changes</button>
+        </form>
+    </div>
+
+    <script src="/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="/js/options.js"></script>
+</body>
+</html>

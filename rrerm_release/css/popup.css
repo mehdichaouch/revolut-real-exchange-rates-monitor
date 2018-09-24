@@ -1,0 +1,160 @@
+body {
+  background: #f4f7fa;
+  color: #5c6878;
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 350px;
+}
+body a:link {
+  text-decoration: none;
+}
+body #currIco:hover {
+  width: 18px;
+  height: 18px;
+}
+body .flat-butt {
+  display: inline-block;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: 0;
+  background-color: #00ACE2;
+  color: #ffffff !important;
+  cursor: pointer;
+  outline: 0;
+  text-align: center;
+  -webkit-appearance: inherit !important;
+  margin-bottom: 5px;
+}
+body .flat-butt:hover {
+  background: #2e7bc4;
+  color: white;
+}
+body .prices {
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #dae1e9;
+  margin: 5px 5px 0px 5px;
+}
+body .main {
+  width: 185px;
+  margin-bottom: 5px;
+}
+body .main #error {
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  color: red;
+}
+body .main .priceTable {
+  margin: auto;
+}
+body .main .priceTable tbody td {
+  margin: auto;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+body .main .priceTable thead {
+  margin: auto;
+  border-bottom: 1px solid #dae1e9;
+}
+body .main .priceTable thead th {
+  text-align: center;
+}
+body .main .priceTable #tabletitle {
+  display: inline;
+}
+body #limitOptions {
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #dae1e9;
+  width: 190px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+body #limitOptions label {
+  width: 100px;
+  display: inline;
+  font-size: 14px;
+}
+body #limitOptions input {
+  height: 20px;
+  width: 90px;
+  display: inline;
+  margin-left: 3px;
+  margin-bottom: 0px;
+  float: right;
+  color: #5c6878;
+}
+body #chart {
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #dae1e9;
+  width: 190px;
+  margin: auto;
+  margin-top: 5px;
+  max-height: 153px;
+}
+body #chart canvas {
+  display: inline !important;
+}
+body #chart label {
+  width: 30px;
+  display: inline;
+}
+body #chart select {
+  width: 50%;
+  margin-top: 7px;
+  height: 30px;
+  display: inline;
+}
+body #chart .form-control {
+  padding: 0px;
+}
+body #chart #changeValue {
+  width: 70px;
+  display: inline;
+  text-align: center;
+}
+body #revolutBtn {
+  width: 190px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+body #settingsBtn {
+  width: 92px;
+  margin-left: 5px;
+}
+body #donateBtn {
+  width: 92px;
+  float: right;
+  margin-right: 5px;
+}
+body .buttonContainer {
+  margin: auto;
+  width: 200px;
+}
+body #portfolio {
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #dae1e9;
+  width: 190px;
+  height: 0px;
+  margin: 0 auto auto auto;
+}
+.whiteBorder2 {
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #dae1e9;
+}

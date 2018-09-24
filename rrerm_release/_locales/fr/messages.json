@@ -1,0 +1,137 @@
+{
+  "extName": {
+    "message": "Revolut Real Exchange Rates Monitor"
+  },
+  "extDesc": {
+    "message": "Track Revolut currency exchange to get best rate when you transfer."
+  },
+
+
+
+  "strSpotrate": {
+    "message": "Spotrate"
+  },
+  "strTargetPrice": {
+    "message": "Target Price"
+  },
+  "strPanicPrice": {
+    "message": "Panic Price"
+  },
+  "str1d": {
+    "message": "day"
+  },
+  "str5d": {
+    "message": "5 days"
+  },
+  "str1mo": {
+    "message": "month"
+  },
+  "str3mo": {
+    "message": "3 months"
+  },
+  "str6mo": {
+    "message": "6 months"
+  },
+  "str1y": {
+    "message": "year"
+  },
+  "str2y": {
+    "message": "2 years"
+  },
+  "str5y": {
+    "message": "5 years"
+  },
+  "strYtd": {
+    "message": "year-to-date"
+  },
+  "strMax": {
+    "message": "max"
+  },
+  "revolutBtn": {
+    "message": "Go to Revolut"
+  },
+  "settingsBtn": {
+    "message": "Settings"
+  },
+  "donateBtn": {
+    "message": "Donate"
+  },
+
+
+
+  "strCurrencyFrom": {
+    "message": "From"
+  },
+  "strCurrencyTo": {
+    "message": "To"
+  },
+  "strNotifOptns": {
+    "message": "Display notifications feature"
+  },
+  "strPortfolio": {
+    "message": "Display portfolio feature"
+  },
+  "strBadgePortfolioConversion": {
+    "message": "Portfolio conversion in badge text"
+  },
+  "strRefreshDelay": {
+    "message": "Refresh delay"
+  },
+  "strSeconds": {
+    "message": " seconds"
+  },
+  "strColorChange": {
+    "message": "Icon color change"
+  },
+  "strRoundBadge": {
+    "message": "Round badge text"
+  },
+  "strBadgeTextAnimate": {
+    "message": "Animate badge text"
+  },
+  "strSound": {
+    "message": "Sound"
+  },
+  "save": {
+    "message": "Save changes"
+  },
+
+
+
+  "strFollow1": {
+    "message": "Follow"
+  },
+  "strFollow2": {
+    "message": "on Twitter for help and suggestions! Or add a new issue on"
+  },
+  "strDonations": {
+    "message": "Donations"
+  },
+  "strDonationsTxt": {
+    "message": "If you're feeling generous and thankful, please consider making a donation!"
+  },
+  "strCopied": {
+    "message": "Copied to clipboard"
+  },
+
+
+
+  "appTooltip": {
+    "message" : "Click to see rates and charts"
+  },
+  "notifTxt": {
+    "message": " price is "
+  },
+  "strOver": {
+    "message": " is over "
+  },
+  "strUnder": {
+    "message": " is under "
+  },
+  "strNotifications": {
+    "message": "Choose 0 to disable notifications"
+  },
+  "strOptions": {
+    "message": "Options"
+  }
+}

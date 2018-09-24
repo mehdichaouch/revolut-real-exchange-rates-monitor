@@ -1,0 +1,81 @@
+@background: #f4f7fa;
+@blue: #00ACE2;
+@blueHover: #2e7bc4;
+@shadow: #bfbfbf;
+@text: #5c6878;
+
+body {
+  background-color: @background;
+  font-family: 'Roboto', sans-serif;
+
+  .flat-butt {
+    display: inline-block;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 6px 10px;
+    border: 0;
+    background-color: @blue;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    -webkit-appearance: inherit !important;
+    margin-bottom: 5px;
+    margin-top: 30px;
+
+    &:hover {
+      background: @blueHover;
+      color: white;
+    }
+  }
+
+  #main {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 2px 1px @shadow;
+    border-radius: 4px;
+
+    label {
+      color: @text;
+    }
+  }
+
+  #contact {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 2px 1px @shadow;
+    border-radius: 4px;
+    color: @text;
+
+    button {
+      width: auto;
+      height: 30px;
+      background: #1b95e0;
+      box-shadow: none;
+      border-radius: 4px;
+      border: none;
+
+      &:hover {
+        background: #0c7abf;
+      }
+
+      img {
+        width: 12px;
+        height: 12px;
+        margin-top: -2px;
+      }
+
+      a {
+        color: white !important;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.form-control {
+    width: 200px !important;
+  }
+}

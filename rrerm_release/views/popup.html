@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Revolut Real Exchange Rates Monitor - Popup</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/popup.css" type="text/css"/>
+</head>
+<body>
+    <div class="prices">
+        <div class="main">
+            <table class="priceTable">
+                <thead>
+                    <tr>
+                        <th name="ico"><img id="currIco" name="currIco" src="/img/eth16.png"></th>
+                        <th id="tableHead" class="tableHead"><p id="tabletitle"></p></th>
+                    </tr>
+                </thead>
+                <div id="error"><p>Revolut is not responding</p></div>
+                <tbody id="priceNumbers">
+                    <tr>
+                        <td id="strSpotrate">Spotrate</td>
+                        <td id="priceRate">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="limitOptions">
+        <label class="control-label" for="targetPrice">
+            <input id="targetPrice" name="targetPrice" type="number" class="text-right" min="0">
+            <span id="strTargetPrice">Target price</span>
+        </label>
+        <label class="control-label" for="panicPrice">
+            <input id="panicPrice" name="panicPrice" type="number" class="text-right" min="0">
+            <span id="strPanicPrice">Panic price</span>
+        </label>
+    </div>
+
+    <div id="portfolio">
+        <p style="margin-bottom: 5px; text-align: center; text-decoration: underline;">Portfolio</p>
+        <input id="portfolioValue" name="portfolioValue" type="number" min="0" style="display: inline; margin-right: 8px; width: 150px;"><img id="currIco2" name="currIco2" src="/img/eth16.png" style="display: inline;">
+        <br/>
+        <p style="display: inline;">=</p>
+        <p style="display: inline;" id="portfolioConversion">0</p>
+    </div>
+
+    <div id="chart">
+        <canvas id="chartCanvas" width="180" height="100"></canvas>
+        <select id="chartPeriod" name="chartPeriod" class="form-control">
+            <option id="str1d" value="1d">1d</option>
+            <option id="str5d" value="5d">5d</option>
+            <option id="str1mo" value="1mo">1mo</option>
+            <option id="str3mo" value="3mo">3mo</option>
+            <option id="str6mo" value="6mo">6mo</option>
+            <option id="str1y" value="1y">1y</option>
+            <option id="str2y" value="2y">2y</option>
+            <option id="str5y" value="5y">5y</option>
+            <option id="strYtd" value="ytd">ytd</option>
+            <option id="strMax" value="max">max</option>
+        </select>
+        <label id="changeValue"></label>
+    </div>
+
+    <div class="buttonContainer">
+        <a href="https://www.revolut.com#revolut-real-exchange-rates-monitor-extension" type="button" target="_blank" id="revolutBtn" class="flat-butt">Go to Revolut</a>
+    </div>
+
+    <div class="buttonContainer">
+        <a type="button" id="settingsBtn" class="flat-butt">Settings</a>
+        <a type="button" id="donateBtn" class="flat-butt">Donate</a>
+    </div>
+
+    <script type="text/javascript" src="/vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="/vendors/janhancic/chrome-badge-animator/BadgeAnimator.js"></script>
+    <script type="text/javascript" src="/js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+	"name": "__MSG_extName__",
+	"version": "0.0.1",
+	"description": "__MSG_extDesc__",
+	"author": "Mehdi Chaouch",
+	"default_locale": "en",
+	"background": {
+		"scripts": ["vendors/janhancic/chrome-badge-animator/BadgeAnimator.js", "js/background.js"],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_title": "__MSG_appTooltip__",
+		"default_icon": {
+			"16": "/img/icon16.png",
+			"24": "/img/icon24.png",
+			"32": "/img/icon32.png"
+		},
+		"default_popup": "views/popup.html"
+	},
+	"icons": {
+		"16": "/img/icon16.png",
+		"24": "/img/icon24.png",
+		"32": "/img/icon32.png",
+		"48": "/img/icon48.png",
+		"128": "/img/icon128.png"
+	},
+	"options_page": "views/options.html",
+	"permissions": [
+		"storage",
+		"alarms",
+		"notifications",
+		"https://www.revolut.com/api/*"
+	],
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com; object-src 'self'",
+	"manifest_version": 2
+}

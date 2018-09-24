@@ -1,0 +1,191 @@
+@background: #f4f7fa;
+@blue: #00ACE2;
+@blueHover: #2e7bc4;
+@gray: #dae1e9;
+@text: #5c6878;
+
+body {
+  background: @background;
+  color: @text;
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 350px;
+  //height: 240px;
+
+  a {
+    &:link {
+      text-decoration: none;
+    }
+  }
+
+  #currIco {
+    &:hover {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .flat-butt {
+    display: inline-block;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 6px 10px;
+    border: 0;
+    background-color: @blue;
+    color: #ffffff !important;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    -webkit-appearance: inherit !important;
+    margin-bottom: 5px;
+
+    &:hover {
+      background: @blueHover;
+      color: white;
+    }
+  }
+
+  .prices {
+    .whiteBorder2;
+    margin: 5px 5px 0px 5px;
+  }
+
+  .main {
+    width: 185px;
+    margin-bottom: 5px;
+
+    #error {
+      visibility: hidden;
+      position: absolute;
+      top: 60px;
+      left: 15px;
+      color: red;
+    }
+
+    .priceTable {
+      margin: auto;
+
+      tbody {
+        //border-bottom: 1px solid @gray;
+
+        td {
+          margin: auto;
+          height: 25px;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+
+      thead {
+        margin: auto;
+        border-bottom: 1px solid @gray;
+
+        th {
+          text-align: center;
+        }
+      }
+
+      #tabletitle {
+        display: inline;
+      }
+    }
+  }
+
+  #limitOptions {
+    .whiteBorder2;
+    width: 190px;
+    margin: auto;
+    margin-bottom: 0px;
+
+    label {
+      width: 100px;
+      display: inline;
+      font-size: 14px;
+    }
+
+    input {
+      height: 20px;
+      width: 90px;
+      display: inline;
+      margin-left: 3px;
+      margin-bottom: 0px;
+      float: right;
+      color: @text;
+    }
+  }
+
+  #chart {
+    .whiteBorder2;
+    width: 190px;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 153px;
+
+    canvas {
+      display: inline !important;
+    }
+
+    label {
+      width: 30px;
+      display: inline;
+    }
+
+    select {
+      width: 50%;
+      margin-top: 7px;
+      height: 30px;
+      display: inline;
+    }
+
+    .form-control {
+      padding: 0px;
+    }
+
+    #changeValue {
+      width: 70px;
+      display: inline;
+      text-align: center;
+    }
+  }
+
+  #revolutBtn {
+    width: 190px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  #settingsBtn {
+    width: 92px;
+    margin-left: 5px;
+  }
+
+  #donateBtn {
+    width: 92px;
+    float: right;
+    margin-right: 5px;
+  }
+
+  .buttonContainer {
+    margin: auto;
+    width: 200px;
+  }
+
+  #portfolio {
+    .whiteBorder2;
+    width: 190px;
+    height: 0px;
+    margin: 0 auto auto auto;
+    //margin-top: 0px;
+  }
+}
+
+.whiteBorder2 {
+  background-color: white;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid @gray;
+}
