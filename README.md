@@ -13,6 +13,8 @@ Compatible with Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Vivaldi &
 * Set "up" and "low" notifications with sound;
 * Optional portfolio feature to track your balance for each currency.
 
+![alt tag](https://raw.githubusercontent.com/mehdichaouch/revolut-real-exchange-rates-monitor/master/img/screenshot.png)
+
 ## APIs
 
 * Ticker & charts data by [Revolut API](https://www.revolut.com/api)
