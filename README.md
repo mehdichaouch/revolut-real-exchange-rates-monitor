@@ -7,7 +7,7 @@ Available soon on the [Chrome Web Store](https://github.com/mehdichaouch/revolut
 Compatible with Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Vivaldi & Brave!
 
 * Track currency prices in all currencies supported by Revolut;
-* Popup with spotrate, buy and sell prices;
+* Popup with spot rate, buy and sell prices;
 * Price charts for last hour, day, week, month or year (not available for all currencies);
 * Live update on icon with customizable delay and color changes;
 * Set "up" and "low" notifications with sound;
@@ -57,9 +57,9 @@ Compatible with Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Vivaldi &
 * You need to build your own version of Brave to be able to use extensions;
 * Visit [Davrous website](https://www.davrous.com/2016/12/07/creating-an-extension-for-all-browsers-edge-chrome-firefox-opera-brave/) for more infos on how building your own.
 
-## Thanks to…
+## Inspired by
 
-* https://github.com/BobRazowsky/coinbaseTicker
+[Coinbase Ticker (browser extension) - Track BTC, ETH, LTC & BCH prices from Coinbase](https://github.com/BobRazowsky/coinbaseTicker)
 
 ## License
 
