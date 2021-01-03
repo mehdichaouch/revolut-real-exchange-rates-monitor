@@ -259,13 +259,13 @@ function updatePrices() {
     let priceString, price, priceRate;
 
     getJSON(
-        "https://www.revolut.com/api/quote/internal?symbol=" + localStorage.currencyFrom + localStorage.currencyTo,
+        "https://www.revolut.com/api/quote/public/" + localStorage.currencyFrom + localStorage.currencyTo,
         function (data) {
             document.getElementById("priceNumbers").style.visibility = "visible";
             document.getElementById("error").style.visibility = "hidden";
-            priceString = data[0].rate.toString();
-            localStorage.lastSpot = data[0].rate;
-            price = data[0].rate;
+            priceString = data.rate.toString();
+            localStorage.lastSpot = data.rate;
+            price = data.rate;
             priceRate = document.getElementById("priceRate");
             priceRate.innerHTML = priceString.toString();
             updatePortfolio();

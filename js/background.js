@@ -98,9 +98,9 @@ function getJSON(url, callback) {
 
 function updateTicker() {
     getJSON(
-        "https://www.revolut.com/api/quote/internal?symbol=" + localStorage.currencyFrom + localStorage.currencyTo,
+        "https://www.revolut.com/api/quote/public/" + localStorage.currencyFrom + localStorage.currencyTo,
         function (data) {
-            let price = data[0].rate;
+            let price = data.rate;
             let badgeText = price.toString();
             let defaultColor = "#00ACE2";
             setBadgeColor(defaultColor);
@@ -245,7 +245,7 @@ function startExtensionListeners() {
     );
 
     browser.notifications.onButtonClicked.addListener(function (notifId, btnIdx) {
-        browser.tabs.create({url: "https://www.revolut.com/money-transfer"});
+        browser.tabs.create({url: "https://www.revolut.com/en-US/send-money-abroad"});
     });
 }
 
