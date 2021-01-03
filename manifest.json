@@ -5,7 +5,7 @@
 	"author": "Mehdi Chaouch",
 	"default_locale": "en",
 	"background": {
-		"scripts": ["vendors/janhancic/chrome-badge-animator/BadgeAnimator.js", "js/background.js"],
+		"scripts": ["vendor/chrome-badge-animator/dist/BadgeAnimator.min.js", "js/background.js"],
 		"persistent": true
 	},
 	"browser_action": {

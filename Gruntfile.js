@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
     let releaseDir = 'rrerm_release',
         nodeDir = 'node_modules',
-        vendorDir = 'vendors';
+        vendorDir = 'vendor';
 
     grunt.initConfig({
 
@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 
         watch: {
             scripts: {
-                files: ['_locales/**/.json', 'js/*.js', 'less/*.less', 'vendors/**/*.css', 'vendors/**/*.js', '*.html'],
+                files: ['_locales/**/.json', 'js/*.js', 'less/*.less', 'vendor/**/*.css', 'vendor/**/*.js', '*.html'],
                 tasks: ['build'],
                 options: {
                     spawn: false
@@ -23,7 +23,14 @@ module.exports = function (grunt) {
         },
 
         clean: {
-            vendors: [vendorDir]
+            vendor: [vendorDir]
+        },
+
+        uglify : {
+            build : {
+                src : [nodeDir + '/chrome-badge-animator/src/BadgeAnimator.js'],
+                dest : vendorDir + '/chrome-badge-animator/dist/BadgeAnimator.min.js'
+            }
         },
 
         copy: {
@@ -68,7 +75,7 @@ module.exports = function (grunt) {
                     {expand: true, src: ['_locales/**'], dest: releaseDir},
                     {expand: true, src: ['img/*'], dest: releaseDir},
                     {expand: true, src: ['sounds/*'], dest: releaseDir},
-                    {expand: true, src: ['vendors/**'], dest: releaseDir},
+                    {expand: true, src: ['vendor/**'], dest: releaseDir},
                     {expand: true, src: ['views/*.html'], dest: releaseDir},
                     {expand: true, src: ['manifest.json'], dest: releaseDir}
                 ]
@@ -126,10 +133,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-terser');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', ['less']);
-    grunt.registerTask('build', ['copy', 'terser', 'less']);
+    grunt.registerTask('build', ['uglify', 'copy', 'terser', 'less']);
     grunt.registerTask('pack', ['compress']);
-    grunt.registerTask('release', ['copy', 'terser', 'less', 'compress']);
+    grunt.registerTask('release', ['uglify', 'copy', 'terser', 'less', 'compress']);
 };
