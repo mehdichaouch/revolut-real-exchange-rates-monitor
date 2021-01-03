@@ -21,6 +21,7 @@
     "bootstrap": "latest",
     "bootstrap-select": "latest",
     "chart.js": "latest",
+    "chrome-badge-animator": "github:janhancic/chrome-badge-animator#master",
     "jquery": "latest",
     "popper.js": "latest"
   },
@@ -30,6 +31,7 @@
     "grunt-contrib-compress": "^1.4.3",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-terser": "^0.1.0",
     "hoek": ">=4.2.1"
