@@ -34,6 +34,6 @@
     "grunt-contrib-uglify": "5.1.0",
     "grunt-contrib-watch": "1.1.0",
     "grunt-terser": "0.1.1",
-    "hoek": "6.1.2"
+    "hoek": "6.1.3"
   }
 }
