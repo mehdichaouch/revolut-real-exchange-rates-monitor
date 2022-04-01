@@ -33,7 +33,7 @@
     "grunt-contrib-less": "2.1.0",
     "grunt-contrib-uglify": "5.1.0",
     "grunt-contrib-watch": "1.1.0",
-    "grunt-terser": "0.1.1",
+    "grunt-terser": "2.0.0",
     "hoek": "6.1.3"
   }
 }
